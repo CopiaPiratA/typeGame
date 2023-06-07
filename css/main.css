@@ -1,0 +1,134 @@
+body {
+    background-color: rgb(45, 99, 118);
+}
+main {
+    margin: auto;
+    margin-top: 200px;
+    width: 90%;
+    text-align: center;
+    display: flex;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin: auto;
+    position: absolute;
+    top: 15%;
+    left: 47%;
+    transform: translate(0%, -50%);
+}
+p {
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input {
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.count-div {
+    text-align: center;
+    margin: auto;
+    width: 20%;
+    color: white;
+    margin-bottom: 20px;
+}
+.button-box {
+    font-size: 25px;
+    height: 110%;
+    margin-top: 5%;
+    color: white;
+    background-color:  rgb(35, 140, 185);
+}
+.button {
+    font-size: 30px;
+    margin-top:20px ;
+    margin-left:5px ;
+    margin-right: 5px;
+    width: 120px;
+    height: 60px;
+    border: none;
+}
+.wrong {
+    background-color: red;
+}
+.active {
+   background-color: green;
+}
+.show-results {
+    margin: auto;
+    margin-top: 90px;
+    margin-left: 80px;
+}
+.retry-btn {
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    left: 33%;
+    top: 70%;
+}
+#main-game {
+    margin: auto;
+    width: 70%;
+}
+#text-section {
+    width:100%;
+}
+#text-pharaph {
+    font-size: 30px;
+    background-color: aliceblue;
+    border: none;
+    width: 1140px;
+}
+#space {
+    width: 500px;
+}
+#input {
+    text-align: center;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+#count-section {
+    height: 70px;
+    display: flex;
+    width: 95%;
+    margin-left: 5%;
+    background-color: rgb(35, 140, 185);
+}
+#button-section {
+    width: 50%;
+    height: 300px;
+    margin: auto;
+    margin-left: 5%;
+}
+#points-section {
+    width: 15%;
+    height: 470px;
+    margin-left: 5%;
+    display: block;
+    color: white;
+    background-color:  rgb(35, 140, 185);
+}
+#play-btn {
+    font-size: 30px;
+    width: 20%;
+    height: 60px;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    transform: translate(0%, -50%);
+    color: white;
+    background-color: rgb(35, 140, 185);
+}
+#results-window {
+    display: none;
+    position: absolute;
+    left: 35%;
+    top: 30%;
+    width: 600px;
+    height: 300px;
+    background-color: aliceblue;
+}
