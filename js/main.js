@@ -6,7 +6,7 @@ const playBtn = document.getElementById("play-btn");
 let pharaphDom = document.getElementById("text-pharaph");
 let chars = "";
 let wrongLetters = [];
-let maxTime = 60;
+let maxTime = 10;
 let timeLeft = maxTime;
 let timer = document.getElementById("time");
 let textSelector = 0;
@@ -17,6 +17,7 @@ let errors = 0;
 let wpm = 0;
 let i = 0;
 function start() {
+    document.getElementById("main-game").style.display = "block";
     pharaphDom.innerHTML = "";
     playBtn.style.display = "none";
     textSelector = Math.floor(Math.random() * texts.length);
@@ -54,6 +55,7 @@ function restart(){
         })
 }
 function showResults(){
+    document.getElementById("main-game").style.display = "none";
     document.getElementById("results-window").style.display = "flex";
     document.getElementById("show-errors").innerHTML = "Errors: " + errors;
     document.getElementById("show-accuracy").innerHTML = "Accuracy: " + accuracyPercent;
@@ -93,7 +95,7 @@ playBtn.addEventListener("click",()=>{
                     if(pharaphDom.querySelectorAll("span")[i].className = "wrong" && errors > 0){
                         errors --;
                     }
-                    pharaphDom.querySelectorAll("span")[i].classList.remove("active", "wrong");
+                    pharaphDom.querySelectorAll("span")[i].classList.remove("correct", "wrong");
                 }
             }
             else if(event.key == "Shift"){
@@ -103,7 +105,7 @@ playBtn.addEventListener("click",()=>{
             else {
                 let expectedChar = chars[i];
                 if (event.key == expectedChar) {
-                    pharaphDom.querySelectorAll("span")[i].classList.add("active");
+                    pharaphDom.querySelectorAll("span")[i].classList.add("correct");
                     i++;
                     } else {
                         pharaphDom.querySelectorAll("span")[i].classList.add("wrong");

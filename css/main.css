@@ -16,16 +16,12 @@ h1 {
     margin: auto;
     position: absolute;
     top: 15%;
-    left: 47%;
-    transform: translate(0%, -50%);
+    left: 50%;
+    transform: translateX(-50%);
 }
 p {
     font-size: 25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-input {
-    overflow: hidden;
-    flex-wrap: wrap;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .count-div {
     text-align: center;
@@ -34,20 +30,14 @@ input {
     color: white;
     margin-bottom: 20px;
 }
-.button {
-    font-size: 30px;
-    margin-top:20px ;
-    margin-left:5px ;
-    margin-right: 5px;
-    width: 120px;
-    height: 60px;
-    border: none;
-}
 .wrong {
     background-color: rgb(188, 109, 109);
 }
-.active {
+.correct {
    background-color: rgb(35, 140, 185);
+}
+.selected {
+    background-color: rgb(120, 204, 190);
 }
 .show-results {
     margin: auto;
@@ -59,9 +49,11 @@ input {
     width: 200px;
     height: 60px;
     position: absolute;
-    left: 33%;
+    left: 50%;
+    transform: translateX(-50%);
     top: 70%;
     border: none;
+    border-radius: 10px 10px;
     font-size: 35px;
     color:rgb(35, 140, 185);
     background-color: white;
@@ -75,20 +67,13 @@ input {
     user-select: none;
     font-size: 30px;
     border: none;
+    border-radius: 10px 10px;
     width: 1140px;
     color:rgb(192, 216, 237);
     background-color: rgb(67, 96, 112);
 }
-#space {
-    width: 500px;
-}
-#input {
-    text-align: center;
-    outline: none;
-    border: none;
-    width: 100%;
-}
 #count-section {
+    border-radius: 10px 10px;
     height: 70px;
     display: flex;
     width: 95%;
@@ -96,35 +81,31 @@ input {
     background-color: rgb(35, 140, 185);
 }
 #text-section {
+    border-radius: 20px 20px;
     width:100%;
     height: 300px;
     margin: auto;
     margin-left: 5%;
-}
-#points-section {
-    width: 15%;
-    height: 470px;
-    margin-left: 5%;
-    display: block;
-    color: white;
-    background-color:  rgb(35, 140, 185);
 }
 #play-btn {
     font-size: 30px;
     width: 20%;
     height: 60px;
     border: none;
+    border-radius: 10px 10px;
     position: absolute;
     top: 50%;
-    left: 43%;
-    transform: translate(0%, -50%);
+    left: 50%;
+    transform: translateX(-50%);
     color: white;
     background-color: rgb(35, 140, 185);
 }
 #results-window {
+    border-radius: 20px 20px;
     display: none;
     position: absolute;
-    left: 35%;
+    left: 50%;
+    transform: translateX(-50%);
     top: 30%;
     width: 600px;
     height: 300px;
