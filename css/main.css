@@ -34,13 +34,6 @@ input {
     color: white;
     margin-bottom: 20px;
 }
-.button-box {
-    font-size: 25px;
-    height: 110%;
-    margin-top: 5%;
-    color: white;
-    background-color:  rgb(35, 140, 185);
-}
 .button {
     font-size: 30px;
     margin-top:20px ;
@@ -51,15 +44,16 @@ input {
     border: none;
 }
 .wrong {
-    background-color: red;
+    background-color: rgb(188, 109, 109);
 }
 .active {
-   background-color: green;
+   background-color: rgb(35, 140, 185);
 }
 .show-results {
     margin: auto;
     margin-top: 90px;
     margin-left: 80px;
+    color: white;
 }
 .retry-btn {
     width: 200px;
@@ -67,19 +61,23 @@ input {
     position: absolute;
     left: 33%;
     top: 70%;
+    border: none;
+    font-size: 35px;
+    color:rgb(35, 140, 185);
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
 }
 #main-game {
     margin: auto;
     width: 70%;
 }
-#text-section {
-    width:100%;
-}
 #text-pharaph {
+    user-select: none;
     font-size: 30px;
-    background-color: aliceblue;
     border: none;
     width: 1140px;
+    color:rgb(192, 216, 237);
+    background-color: rgb(67, 96, 112);
 }
 #space {
     width: 500px;
@@ -97,8 +95,8 @@ input {
     margin-left: 5%;
     background-color: rgb(35, 140, 185);
 }
-#button-section {
-    width: 50%;
+#text-section {
+    width:100%;
     height: 300px;
     margin: auto;
     margin-left: 5%;
@@ -130,5 +128,5 @@ input {
     top: 30%;
     width: 600px;
     height: 300px;
-    background-color: aliceblue;
+    background-color:  rgb(35, 140, 185);
 }
